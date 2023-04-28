@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "gcs" {
-    bucket = "parisaiacweu"
-    prefix = "enterprise-network/weu4"
+    bucket = "parisaiacweudummy"
+    prefix = "enterprise-network/weu4/default.tfstate"
   }
 }
 
