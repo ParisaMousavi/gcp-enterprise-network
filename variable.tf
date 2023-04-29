@@ -25,7 +25,6 @@ variable "terraform_remote_state_bucket" {
 
 variable "project" {
   description = "The project id"
-  default     = "my-terraform-projects-001"
 }
 
 variable "region" {

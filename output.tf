@@ -18,6 +18,7 @@ output "vpc1_subnets" {
   value = {
     for subnet in keys(google_compute_subnetwork.vpc1_subnets) : subnet => {
       id            = google_compute_subnetwork.vpc1_subnets[subnet].id
+      name          = google_compute_subnetwork.vpc1_subnets[subnet].name
       ip_cidr_range = google_compute_subnetwork.vpc1_subnets[subnet].ip_cidr_range
     }
   }
